@@ -1,0 +1,10 @@
+management:
+  metrics:
+    export:
+      datadog:
+        step: 1s
+        uri: https://localhost
+        api-key: fake-api-key
+logging:
+  level:
+    io.micrometer.datadog: error # to remove noise from datadog, which complains that it cannot submit metrics
