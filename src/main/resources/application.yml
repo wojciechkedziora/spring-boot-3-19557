@@ -1,7 +1,7 @@
 management:
-  metrics:
-    export:
-      datadog:
+  datadog:
+    metrics:
+      export:
         step: 1s
         uri: https://localhost
         api-key: fake-api-key
